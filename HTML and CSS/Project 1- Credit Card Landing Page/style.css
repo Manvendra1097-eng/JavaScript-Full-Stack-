@@ -152,19 +152,18 @@ header {
 
 .text-payment {
   display: flex;
-  gap: 2rem;
-  justify-content: space-between;
+
+  justify-content: space-around;
   align-items: center;
 }
 
 .payment-left {
   font-size: 5.4rem;
-  width: 90rem;
-  font-size: 500;
+  width: 60rem;
 }
 
-.payment-left {
-  width: 50rem;
+.payment-right {
+  width: 40rem;
 }
 
 .payment-img {
