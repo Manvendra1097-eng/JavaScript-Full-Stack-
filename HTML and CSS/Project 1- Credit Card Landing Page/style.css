@@ -13,11 +13,17 @@ body {
   background-color: #151515;
   color: #fff;
   font-size: 1.6rem;
-  font-family: monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 /* ------ NAV-BAR ------- */
@@ -51,12 +57,313 @@ li {
 .btn-pink-container {
   background-image: url(./Assets/Icons/btn-pink-bg.svg);
   background-repeat: no-repeat;
-
-  /* display: inline; */
   padding-left: 2.2rem;
 }
 
-/* .btn-pink {
+/* ----- Hero section ----- */
+
+.hero-section {
+  background-image: url(./Assets/Photos/backCards.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: 300px -60px;
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  height: 80rem;
+  padding: 2rem 8rem;
+  overflow-x: hidden;
+}
+
+.text-pink {
+  color: #f637ec;
+  font-weight: 700;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  font-size: 6.4rem;
+}
+
+.subtext {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-size: 400;
+  width: 75%;
+}
+
+.hero-right {
   position: absolute;
-  left: -2.4rem;
-} */
+  right: -26rem;
+}
+
+/* section logos */
+.logos {
+  height: 10rem;
+  padding: 2rem 1rem;
+  margin-bottom: 6rem;
+  background-color: #292929;
+  display: flex;
+  justify-content: space-around;
+}
+
+.get-started-btn {
+  background-image: url(./Assets/Icons/btn-pink-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2.2rem;
+  margin-top: 15rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.a-text {
+  margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  font-size: 3.2rem;
+}
+
+.a-text span {
+  margin-left: 1rem;
+}
+
+.plus {
+  color: #f637ec;
+}
+
+.happy-user {
+  display: inline-block;
+  font-size: 1.6rem;
+  width: 100px;
+  padding: 0 5px;
+}
+
+/* section payment */
+
+.section-payment {
+  margin: 10rem 6rem;
+}
+
+.text-payment {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-left {
+  font-size: 5.4rem;
+  width: 90rem;
+  font-size: 500;
+}
+
+.payment-left {
+  width: 50rem;
+}
+
+.payment-img {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.card {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  border: 1px solid #fff;
+}
+
+.card.mid {
+  position: relative;
+  top: -1rem;
+  background-color: #474443;
+}
+
+.card img {
+  width: 80%;
+}
+
+/* Section card */
+
+.section-card {
+  padding: 4rem;
+  background-color: #fceffb;
+  color: #151515;
+  text-align: center;
+}
+
+.card-decription {
+  font-size: 5.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 60%;
+  margin: 0 auto;
+  height: 60rem;
+  background-image: url(./Assets/Photos/VCards.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #777277;
+}
+
+/* Testemonial section */
+
+.section-testemonial {
+  margin: 6rem 0;
+}
+
+.testemonial-card-box {
+  display: flex;
+  column-gap: 5rem;
+  justify-content: center;
+}
+
+.testemonial-heading {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4.8rem;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.testemonial-sub-heading {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #838383;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.t-card {
+  height: 15rem;
+  width: 35rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1e1f24;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+}
+
+.t-card img {
+  scale: 0.5;
+  position: relative;
+  left: -4.8rem;
+}
+
+.address-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-one {
+  background: linear-gradient(to left top, #5d5d5d, #413d3b);
+}
+
+.testimonial-pagination {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-nav {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background-color: #464346;
+  margin: 1rem;
+}
+
+.active {
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: #f637ec;
+}
+
+/* section customization */
+
+.section-customization {
+  background-image: url(./Assets/Photos/Rectangle\ 6774.png),
+    url(./Assets/Photos/Rectangle\ 6773.png);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-customization p {
+  position: absolute;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  width: 90rem;
+  font-size: 6.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-custuom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-black {
+  color: #1a171a;
+  font-weight: 700;
+}
+
+.diamond-right {
+  position: relative;
+  bottom: -8rem;
+}
+
+/* ---- foorte ---- */
+
+footer {
+  margin: 10rem 12rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  column-gap: 10rem;
+}
+
+.footer-nav {
+  display: flex;
+  column-gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
