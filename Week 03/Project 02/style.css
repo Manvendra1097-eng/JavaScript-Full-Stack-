@@ -1,0 +1,85 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+:root {
+  --nav-bgc: #000000;
+  --btn-purple: #ba0cc5;
+  --primary-text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
+  color: var(--primary-text);
+}
+
+body {
+  background-image: linear-gradient(#673388, #3f3281);
+}
+
+.line {
+  background-color: var(--primary-text);
+  width: 1px;
+  height: 50px;
+}
+
+.navbar {
+  background-color: var(--nav-bgc);
+  color: var(--primary-text);
+  display: grid;
+  grid-template-columns: 20% 1px 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.button-small {
+  position: relative;
+  right: -50%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-purple);
+}
+
+.logo {
+  scale: 0.5;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 64px;
+  width: 60%;
+  margin-inline: auto;
+  padding-block: 8% 1%;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-large {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-purple);
+  font-size: 18px;
+}
