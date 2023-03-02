@@ -7,3 +7,5 @@
 ## [Practice project 1 - Calm](./Practice%20Project%201%20-%20Calm/)
 
 ## [Practice project 2 - Medifinr](./Practive%20Project%202%20-%20Medifine/)
+
+## [Practice project 3 - Justice Landing Page](./Practice%20project%203%20-%20Justice%20Landing%20page/)
