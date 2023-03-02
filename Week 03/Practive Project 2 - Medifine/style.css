@@ -1,0 +1,130 @@
+:root {
+  --primary-green: #20bc7e;
+  --margin: 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 1440px;
+  background-color: #f0f4f5;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* -- nav bar -- */
+
+nav {
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 5rem;
+  font-weight: 700;
+}
+
+nav ul li:first-child {
+  color: var(--primary-green);
+}
+
+/* -- nav bar ends */
+
+/* -- hero section -- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+main section {
+  width: 50%;
+}
+
+.left-section {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 7.2rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  margin-block: var(--margin);
+}
+
+.bgc-img {
+  position: absolute;
+  top: -6rem;
+  right: -8rem;
+  width: 90%;
+  z-index: -1;
+}
+
+.bottom-img {
+  position: absolute;
+  right: 0;
+}
+
+button {
+  padding: 1.5rem 3rem;
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: var(--margin);
+}
+
+.mouse-img {
+  position: absolute;
+  right: -5rem;
+  bottom: 0;
+}
+
+/* -- right section */
+
+.circle-green,
+.circle-yellow,
+.doctor {
+  position: absolute;
+}
+
+.circle-green {
+  width: 30%;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.circle-yellow {
+  width: 28%;
+  bottom: 4rem;
+  right: 2rem;
+}
+
+.doctor {
+  right: 5rem;
+  bottom: 0;
+  height: 90%;
+}
