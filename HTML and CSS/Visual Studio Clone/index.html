@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Studio Code - Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d5ece59875.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vscode</title>
+  </head>
+  <body class="bg-[#2c2c32] text-[#ababa5]">
+    <div class="w-[90%] mx-auto">
+      <!-- nav bar starts -->
+      <nav class="flex items-center justify-between m-0">
+        <div class="flex items-center gap-8">
+          <div class="flex gap-6">
+            <img class="w-8" src="./assets/vs-logo.png" alt="" />
+            <span class="text-white text-2xl">Visual Studio Code</span>
+          </div>
+
+          <ul class="font-medium text-lg flex items-center gap-x-8">
+            <li>Docs</li>
+            <li>Updates</li>
+            <li>Blog</li>
+            <li>API</li>
+            <li>Extensions</li>
+            <li>FAQ</li>
+            <li>Learn</li>
+          </ul>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <div class="flex items-center gap-1 bg-[#525257] py-5 pl-4 pr-20">
+            <img class="w-6 text-xl mx-2" src="./assets/search.svg" alt="" />
+            <span>Search Docs</span>
+          </div>
+
+          <button
+            class="flex items-center gap-3 bg-[#005ba4] text-white py-[1.125rem] px-8"
+          >
+            <img class="w-5" src="./assets/download.svg" alt="" />
+            <span class="text-lg font-bold">Download</span>
+          </button>
+        </div>
+      </nav>
+      <!-- nav bar ends -->
+      <div
+        class="bg-[#25252b] h-12 -mx-[6%] flex items-center gap-2 justify-center text-xl"
+      >
+        <span class="text-[#2361eb] hover:underline">Note :</span>
+        <p>it is designed only for education purpose.</p>
+      </div>
+
+      <!-- section with vscode screenshot -->
+      <section class="flex justify-center gap-4 mt-8">
+        <div class="w-[50%] flex flex-col items-center mt-[4%]">
+          <p class="text-7xl text-white">
+            <span class="flex flex-col">Code editing.</span>
+            <span class="text-center font-[500] ml-8">Redefined.</span>
+          </p>
+          <p class="text-2xl mt-6">
+            Free. Built on open source. Runs everywhere.
+          </p>
+          <div class="flex gap-1 items-center justify-center mt-6">
+            <button
+              class="bg-[#0066b8] flex flex-col items-center justify-center py-3 px-8"
+            >
+              <span class="text-lg font-bold text-white"
+                >Download for Windows</span
+              >
+              <span class="text-lg text-gray-300">Stable Build</span>
+            </button>
+            <button class="bg-[#0066b8] py-8 px-4">
+              <img class="w-4 h-4" src="./assets/chevronDown.svg" alt="" />
+            </button>
+          </div>
+          <!-- Web, Insiders edition, or other platforms links -->
+
+          <div class="bg-[#25252b] my-4 p-3 rounded-lg">
+            <a class="text-[#1d79ff] hover:underline" href="#">Web</a>,
+            <a class="text-[#1d79ff] hover:underline" href="#"
+              >Insiders edition</a
+            >,
+            <a class="text-[#1d79ff] hover:underline" href="#"
+              >or other platforms</a
+            >
+          </div>
+
+          <!-- By using VS Code, you agree to its
+               license and privacy statement. -->
+          <div class="mx-auto">
+            <p>By using VS Code, you agree to its</p>
+            <a href="#" class="text-[#1d79ff] hover:underline text-center block"
+              >license and privacy statement.</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="./assets/home-screenshot-win-lg.png" alt="" />
+        </div>
+      </section>
+
+      <!-- IntelliSense Run and Debug Built-in Git Extensions section start-->
+
+      <section
+        class="h-[24vh] bg-white -mx-[6%] my-[2%] flex justify-center items-center gap-5"
+      >
+        <div
+          class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-100 hover:text-blue-800"
+        >
+          <i class="fa-regular text-7xl fa-lightbulb"></i>
+          <span class="text-2xl text-gray-600">IntelliSense</span>
+        </div>
+        <div
+          class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-100 hover:text-green-500"
+        >
+          <i class="fa-solid text-7xl fa-bug"></i>
+          <span class="text-2xl text-gray-600">Run and Debug</span>
+        </div>
+        <div
+          class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-100 hover:text-red-500"
+        >
+          <i class="fa-solid text-7xl fa-code-branch"></i>
+          <span class="text-2xl text-gray-600">Built-in Git</span>
+        </div>
+        <div
+          class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-100 hover:text-black"
+        >
+          <i class="text-5xl fa-solid fa-table-cells-large"></i>
+          <span class="text-2xl text-gray-600">Extensions</span>
+        </div>
+      </section>
+
+      <!-- IntelliSense Run and Debug Built-in Git Extensions section start-->
+    </div>
+  </body>
+</html>
