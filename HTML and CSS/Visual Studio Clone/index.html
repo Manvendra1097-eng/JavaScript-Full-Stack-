@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/vs-logo.png" />
-    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/d5ece59875.js"
       crossorigin="anonymous"
@@ -16,15 +16,15 @@
     <div class="w-[90%] mx-auto">
       <!-- nav bar starts -->
       <nav
-        class="flex items-center justify-between m-0 h-15vh sticky top-0 bg-[#2c2c32] -mx-[6%] px-[6%] z-10"
+        class="flex items-center justify-between sticky top-0 bg-[#2c2c32] -mx-[6%] px-[6%] z-10"
       >
         <div class="flex items-center gap-8">
-          <div class="flex gap-6">
-            <img class="w-8" src="./assets/vs-logo.png" alt="" />
-            <span class="text-white text-2xl">Visual Studio Code</span>
+          <div class="flex gap-3">
+            <img class="w-7" src="./assets/vs-logo.png" alt="" />
+            <span class="text-white text-lg">Visual Studio Code</span>
           </div>
 
-          <ul class="font-medium text-lg flex items-center gap-x-8">
+          <ul class="text-sm flex items-center gap-x-8">
             <li>Docs</li>
             <li>Updates</li>
             <li>Blog</li>
@@ -35,25 +35,25 @@
           </ul>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center h-[8vh]">
           <div
-            class="flex items-center gap-1 bg-[#35363a] hover:bg-[#525257] py-5 pl-4 pr-20"
+            class="flex items-center gap-1 bg-[#35363a] hover:bg-[#525257] h-full pr-6 pl-2"
           >
             <img class="w-5 text-xl mx-2" src="./assets/search.svg" alt="" />
             <span>Search Docs</span>
           </div>
 
           <button
-            class="flex items-center gap-3 bg-[#2d74d7] hover:bg-[#0066ba] text-white py-[1.125rem] px-8"
+            class="flex items-center gap-3 bg-[#2d74d7] hover:bg-[#0066ba] text-white h-[8vh] px-4"
           >
-            <img class="w-5" src="./assets/download.svg" alt="" />
-            <span class="text-lg font-bold">Download</span>
+            <img class="w-4" src="./assets/download.svg" alt="" />
+            <span class="font-semibold">Download</span>
           </button>
         </div>
       </nav>
       <!-- nav bar ends -->
       <div
-        class="bg-[#25252b] h-12 -mx-[6%] flex items-center gap-2 justify-center text-xl"
+        class="bg-[#25252b] h-12 -mx-[6%] flex items-center gap-2 justify-center"
       >
         <span class="text-[#2d74d7] hover:underline">Note :</span>
         <p>it is designed only for education purpose.</p>
@@ -61,30 +61,30 @@
 
       <!-- section with vscode screenshot -->
       <section class="flex justify-center gap-4 mt-8">
-        <div class="w-[50%] flex flex-col items-center mt-[4%]">
-          <p class="text-7xl text-white">
-            <span class="flex flex-col">Code editing.</span>
-            <span class="text-center font-[500] ml-8">Redefined.</span>
+        <div class="w-[60%] flex flex-col items-center mt-[4%]">
+          <p class="text-5xl text-white">
+            <span class="flex flex-col font-thin">Code editing.</span>
+            <span class="text-center text-center mt-2 block">Redefined.</span>
           </p>
-          <p class="text-2xl mt-6">
+          <p class="text-lg mt-6">
             Free. Built on open source. Runs everywhere.
           </p>
           <div class="flex gap-1 items-center justify-center mt-6">
             <button
-              class="bg-[#2d74d7] hover:bg-[#0066ba] flex flex-col items-center justify-center py-3 px-8"
+              class="bg-[#2d74d7] hover:bg-[#0066ba] flex flex-col items-center justify-center py-1 px-6"
             >
-              <span class="text-lg font-bold text-white"
+              <span class="font-semibold text-lg text-white"
                 >Download for Windows</span
               >
-              <span class="text-lg text-gray-300">Stable Build</span>
+              <span class="text-gray-300 text-sm">Stable Build</span>
             </button>
-            <button class="bg-[#2d74d7] hover:bg-[#0066ba] py-8 px-4">
+            <button class="bg-[#2d74d7] hover:bg-[#0066ba] py-5 px-3">
               <img class="w-4 h-4" src="./assets/chevronDown.svg" alt="" />
             </button>
           </div>
           <!-- Web, Insiders edition, or other platforms links -->
 
-          <div class="bg-[#25252b] my-4 p-3 rounded-lg">
+          <div class="bg-[#25252b] text-sm my-4 p-2 rounded-lg">
             <a class="text-[#1d79ff] hover:underline" href="#">Web</a>,
             <a class="text-[#1d79ff] hover:underline" href="#"
               >Insiders edition</a
@@ -96,7 +96,7 @@
 
           <!-- By using VS Code, you agree to its
                license and privacy statement. -->
-          <div class="mx-auto">
+          <div class="mx-auto text-sm">
             <p>By using VS Code, you agree to its</p>
             <a href="#" class="text-[#1d79ff] hover:underline text-center block"
               >license and privacy statement.</a
@@ -111,47 +111,43 @@
       <!-- IntelliSense Run and Debug Built-in Git Extensions section start-->
 
       <section
-        class="h-[40vh] bg-white -mx-[6%] mt-[2%] flex justify-center items-center gap-5"
+        class="h-[25vh] bg-white -mx-[6%] mt-[2%] flex justify-center items-center gap-5"
       >
         <div
           class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-200 hover:text-blue-800"
         >
-          <i class="fa-regular text-7xl fa-lightbulb"></i>
-          <span class="text-2xl text-gray-600">IntelliSense</span>
+          <i class="fa-regular text-5xl fa-lightbulb"></i>
+          <span class="text-xl text-gray-700">IntelliSense</span>
         </div>
         <div
           class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-200 hover:text-green-500"
         >
-          <i class="fa-solid text-7xl fa-bug"></i>
-          <span class="text-2xl text-gray-600">Run and Debug</span>
+          <i class="fa-solid text-5xl fa-bug"></i>
+          <span class="text-xl text-gray-700">Run and Debug</span>
         </div>
         <div
           class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-200 hover:text-red-500"
         >
-          <i class="fa-solid text-7xl fa-code-branch"></i>
-          <span class="text-2xl text-gray-600">Built-in Git</span>
+          <i class="fa-solid text-5xl fa-code-branch"></i>
+          <span class="text-xl text-gray-700">Built-in Git</span>
         </div>
         <div
           class="h-full w-[20%] flex flex-col gap-4 justify-center items-center text-gray-500 transition-all hover:bg-gray-200 hover:text-black"
         >
           <i class="text-5xl fa-solid fa-table-cells-large"></i>
-          <span class="text-2xl text-gray-600">Extensions</span>
+          <span class="text-xl text-gray-700">Extensions</span>
         </div>
       </section>
 
       <!-- IntelliSense Run and Debug Built-in Git Extensions section start-->
 
       <!-- tesemonial section starts -->
-      <section class="bg-gray-100 h-[50vh] -mx-[6%] text-gray-500 text-xl">
+      <section class="bg-gray-100 h-[50vh] -mx-[6%] text-gray-500">
         <div class="w-[90%] mx-auto flex justify-around gap-8 h-full">
           <!-- first card -->
-          <div class="w-1/3 h-full flex justify-around items-center gap-x-8">
+          <div class="w-1/3 h-full flex justify-around items-center gap-x-2">
             <div class="relative -top-7">
-              <img
-                class="rounded-full scale-125"
-                src="./assets/Una.jpg"
-                alt=""
-              />
+              <img class="rounded-full" src="./assets/Una.jpg" alt="" />
             </div>
             <div>
               <div>
@@ -174,10 +170,10 @@
           </div>
 
           <!-- second card -->
-          <div class="w-1/3 h-full flex justify-around items-center gap-x-8">
-            <div class="relative -top-7">
+          <div class="w-1/3 h-full flex justify-around items-center gap-x-4">
+            <div class="relative -top-10">
               <img
-                class="rounded-full scale-150"
+                class="rounded-full scale-125"
                 src="./assets/jadbox.jpg"
                 alt=""
               />
@@ -204,13 +200,9 @@
           </div>
 
           <!-- thirde card -->
-          <div class="w-1/3 h-full flex justify-around items-center gap-x-8">
+          <div class="w-1/3 h-full flex justify-around items-center gap-x-2">
             <div class="relative -top-7">
-              <img
-                class="rounded-full scale-125"
-                src="./assets/PKodmad.jpg"
-                alt=""
-              />
+              <img class="rounded-full" src="./assets/PKodmad.jpg" alt="" />
             </div>
             <div>
               <div>
@@ -240,13 +232,13 @@
         class="bg-white -mx-[6%] flex justify-center items-center h-[70vh]"
       >
         <div class="w-2/5">
-          <img class="scale-125" src="./assets/home-intellisense.svg" alt="" />
+          <img src="./assets/home-intellisense.svg" alt="" />
         </div>
         <div
-          class="h-full w-2/5 flex flex-col justify-start mt-[10%] font-thin text-gray-700"
+          class="h-full w-2/5 flex flex-col justify-start mt-[10%] text-gray-700"
         >
-          <span class="mb-[3%] text-4xl">Meet IntelliSense.</span>
-          <p class="text-2xl leading-loose">
+          <span class="mb-[3%] text-3xl font-thin">Meet IntelliSense.</span>
+          <p class="text-xl leading-relaxed mt-6">
             Go beyond syntax highlighting and autocomplete with IntelliSense,
             which provides smart completions based on variable types, function
             definitions, and imported modules.
@@ -262,12 +254,12 @@
         class="bg-gray-100 -mx-[6%] px-[8%] flex justify-between items-center h-[70vh]"
       >
         <div
-          class="h-full w-3/5 flex flex-col justify-start mt-[10%] pt-6 font-thin text-gray-700"
+          class="h-full w-3/5 flex flex-col justify-start mt-[10%] pt-6 text-gray-700"
         >
-          <span class="mb-[3%] text-4xl"
+          <span class="mb-[3%] text-3xl font-thin"
             >Print statement debugging is a thing of the past.</span
           >
-          <p class="text-2xl leading-loose">
+          <p class="text-xl leading-relaxed text-gray-600 mt-6">
             Debug code right from the editor. Launch or attach to your running
             apps and debug with break points, call stacks, and an interactive
             console.
@@ -275,7 +267,7 @@
         </div>
 
         <div class="w-2/5 justify-self-end flex justify-end items-center">
-          <img class="scale-125" src="./assets/home-debug.svg" alt="" />
+          <img src="./assets/home-debug.svg" alt="" />
         </div>
       </section>
 
@@ -287,14 +279,14 @@
         class="bg-white -mx-[6%] flex justify-center items-center h-[70vh]"
       >
         <div class="w-2/5">
-          <img class="scale-125" src="./assets/home-git.svg" alt="" />
+          <img src="./assets/home-git.svg" alt="" />
         </div>
 
         <div
-          class="h-full w-2/5 flex flex-col justify-start mt-[10%] font-thin text-gray-700"
+          class="h-full w-2/5 flex flex-col justify-start mt-[10%] text-gray-700"
         >
-          <span class="mb-[3%] text-4xl">Git commands built-in.</span>
-          <p class="text-2xl leading-loose">
+          <span class="mb-[3%] text-3xl font-thin">Git commands built-in.</span>
+          <p class="text-xl leading-relaxed text-gray-600 mt-6">
             Working with Git and other SCM providers has never been easier.
             Review diffs, stage files, and make commits right from the editor.
             Push and pull from any hosted SCM service.
@@ -310,10 +302,12 @@
         class="bg-gray-100 -mx-[6%] px-[8%] flex justify-between items-center h-[70vh]"
       >
         <div
-          class="h-full w-3/5 flex flex-col justify-start mt-[10%] pt-6 font-thin text-gray-700"
+          class="h-full w-3/5 flex flex-col justify-start mt-[10%] pt-6 text-gray-700"
         >
-          <span class="mb-[3%] text-4xl">Extensible and customizable.</span>
-          <p class="text-2xl leading-loose text-gray-600 font-normal">
+          <span class="mb-[3%] text-3xl font-thin"
+            >Extensible and customizable.</span
+          >
+          <p class="text-xl leading-relaxed text-gray-600 mt-6">
             Want even more features? Install extensions to add new languages,
             themes, debuggers, and to connect to additional services. Extensions
             run in separate processes, ensuring they won't slow down your
@@ -341,14 +335,16 @@
         class="bg-white -mx-[6%] flex justify-center items-center h-[70vh]"
       >
         <div class="w-2/5">
-          <img class="scale-125" src="./assets/home-azure.svg" alt="" />
+          <img src="./assets/home-azure.svg" alt="" />
         </div>
 
         <div
-          class="h-full w-2/5 flex flex-col justify-start mt-[12%] font-thin text-gray-700"
+          class="h-full w-2/5 flex flex-col justify-start mt-[12%] text-gray-700"
         >
-          <span class="mb-[3%] text-4xl">Deploy with confidence and ease</span>
-          <p class="text-2xl leading-loose font-normal text-gray-600">
+          <span class="mb-[3%] text-3xl font-thin"
+            >Deploy with confidence and ease</span
+          >
+          <p class="text-xl leading-relaxed text-gray-600 mt-6">
             With
             <span class="text-[#0066b8] hover:underline">Microsoft Azure</span>
             you can deploy and host your React, Angular, Vue, Node, Python (and
@@ -369,15 +365,15 @@
 
       <section class="h-[90vh] -mx-[6%] bg-gray-100">
         <div class="w-[70vw] mx-auto py-[6%]">
-          <p class="text-center text-4xl text-gray-800 font-thin">
+          <p class="text-center text-3xl text-gray-800 font-thin">
             VS Code for
           </p>
           <!-- upper row -->
-          <div>
+          <!-- <div>
             <ul
-              class="flex justify-center gap-[10%] pt-[5%] text-2xl text-gray-600"
+              class="flex justify-start gap-[10%] pt-[5%] text-xl text-gray-600"
             >
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/javascript.svg"
@@ -385,7 +381,7 @@
                 />
                 JavaScript
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/python.svg"
@@ -393,7 +389,7 @@
                 />
                 Python
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/java.svg "
@@ -401,7 +397,7 @@
                 />
                 Java
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/markdown.svg"
@@ -409,7 +405,7 @@
                 />
                 Markdown
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/typescript.svg"
@@ -417,18 +413,18 @@
                 />
                 TypeScript
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img class="scale-150 self-end" src="./assets/cpp.svg" alt="" />
                 C/C++
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- lower row -->
-          <div>
+          <!-- <div>
             <ul
-              class="flex justify-center gap-[10%] pt-[5%] text-2xl text-gray-600"
+              class="flex justify-start gap-[10%] pt-[5%] text-xl text-gray-600"
             >
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/json.svg"
@@ -436,7 +432,7 @@
                 />
                 JSON
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/powershell.svg"
@@ -444,7 +440,7 @@
                 />
                 Powershell
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/html.svg"
@@ -452,7 +448,7 @@
                 />
                 HTML/CSS
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/csharp.svg"
@@ -460,11 +456,11 @@
                 />
                 C#
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img class="scale-150 self-end" src="./assets/php.svg" alt="" />
                 PHP
               </li>
-              <li class="flex gap-2 justify-center items-center">
+              <li class="flex gap-2 justify-start w-1/6 items-center">
                 <img
                   class="scale-150 self-end"
                   src="./assets/yaml.svg"
@@ -473,16 +469,86 @@
                 Ymal
               </li>
             </ul>
+          </div> -->
+
+          <div class="flex justify-center">
+            <div class="flex gap-8 text-lg text-gray-700 mt-8">
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/javascript.svg" alt="" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/json.svg" alt="" />
+                  <span>JSON</span>
+                </div>
+              </div>
+              <!-- python,Powershell -->
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/python.svg" alt="" />
+                  <span>Python</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/powershell.svg" alt="" />
+                  <span>Powershell</span>
+                </div>
+              </div>
+              <!-- java,html -->
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/java.svg" alt="" />
+                  <span>Java</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/html.svg" alt="" />
+                  <span>HTML/CSS</span>
+                </div>
+              </div>
+              <!-- markdown ,c# -->
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/markdown.svg" alt="" />
+                  <span>Markdown</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/csharp.svg" alt="" />
+                  <span>C#</span>
+                </div>
+              </div>
+              <!-- typeScript,Php -->
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/typescript.svg" alt="" />
+                  <span>TypeScript</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/php.svg" alt="" />
+                  <span>PHP</span>
+                </div>
+              </div>
+              <!-- java,html -->
+              <div class="flex flex-col gap-8">
+                <div class="flex">
+                  <img src="./assets/cpp.svg" alt="" />
+                  <span>C/C++</span>
+                </div>
+                <div class="flex">
+                  <img src="./assets/yaml.svg" alt="" />
+                  <span>Yaml</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <a
             href="#"
-            class="block py-[5%] text-[#0066b8] hover:underline text-center text-2xl"
+            class="block py-[5%] text-[#0066b8] hover:underline text-center text-xl"
             >and many more languages on the Marketplace...</a
           >
 
           <button
-            class="block mx-auto bg-[#005ba4] hover:bg-[#0066ba] px-[5%] py-[2%] text-white text-xl font-bold rounded-sm"
+            class="block mx-auto bg-[#005ba4] hover:bg-[#0066ba] px-[5%] py-[2%] text-white font-medium rounded-sm"
           >
             Get Started Now
           </button>
@@ -505,22 +571,21 @@
             </div>
             <!-- button start -->
             <div
-              class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center p-4 font-bold"
+              class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center px-3 py-2 font-semibold"
             >
               <div class="flex gap-5 items-center justify-center">
-                <img class="w-5" src="./assets/download.svg" alt="" />
+                <img class="w-4" src="./assets/download.svg" alt="" />
                 <span>Windows</span>
               </div>
-              <p>Windows 8, 10, 11</p>
+              <p class="text-xs">Windows 8, 10, 11</p>
             </div>
             <!-- button ends -->
             <!-- 1 -->
             <div class="flex justify-center items-center gap-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >User Installer</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -537,11 +602,10 @@
             </div>
             <!-- 2 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >System Installer</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -558,11 +622,10 @@
             </div>
             <!-- 3 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >.zip</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -579,11 +642,10 @@
             </div>
             <!-- 4 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block text-center w-1/2"
+              <span class="text-gray-700 font-medium block text-center w-1/2"
                 >CLI</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -612,33 +674,32 @@
             <div class="flex gap-1 w-[90%] mx-auto">
               <!-- 1-button -->
               <div
-                class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center p-4 font-bold"
+                class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center px-3 py-2 font-semibold"
               >
                 <div class="flex gap-5 items-center justify-center">
-                  <img class="w-5" src="./assets/download.svg" alt="" />
+                  <img class="w-4" src="./assets/download.svg" alt="" />
                   <span>.deb</span>
                 </div>
-                <p>Debian, Ubuntu</p>
+                <p class="text-xs">Debian, Ubuntu</p>
               </div>
               <!-- 2-button -->
               <div
-                class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center p-4 font-bold"
+                class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center px-3 py-2 font-semibold"
               >
                 <div class="flex gap-5 items-center justify-center">
-                  <img class="w-5" src="./assets/download.svg" alt="" />
+                  <img class="w-4" src="./assets/download.svg" alt="" />
                   <span>.deb</span>
                 </div>
-                <p>Debian, Ubuntu</p>
+                <p class="text-sm">Debian, Ubuntu</p>
               </div>
             </div>
             <!-- button ends -->
             <!-- 1 -->
             <div class="flex justify-center items-center gap-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >.deb</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -655,11 +716,10 @@
             </div>
             <!-- 2 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >.rpm</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >x64</span
@@ -676,11 +736,10 @@
             </div>
             <!-- 3 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/2 text-center"
+              <span class="text-gray-700 font-medium block w-1/2 text-center"
                 >.tar.gz</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >Arm32</span
@@ -697,11 +756,10 @@
             </div>
             <!-- 4 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block text-center w-1/2"
+              <span class="text-gray-700 font-medium block text-center w-1/2"
                 >Snap</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >Snap Store</span
@@ -711,11 +769,10 @@
 
             <!-- 5 -->
             <div class="flex justify-end items-center gap-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block text-center w-1/2"
+              <span class="text-gray-700 font-medium block text-center w-1/2"
                 >CLI</span
               >
-              <div class="w-1/2">
+              <div class="w-1/2 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >Snap Store</span
@@ -743,22 +800,21 @@
             </div>
             <!-- button start -->
             <div
-              class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center p-4 font-bold"
+              class="bg-[#2d74d7] hover:bg-[#0066ba] text-white w-[90%] my-[5%] mx-auto flex flex-col items-center justify-center px-3 py-3 font-semibold"
             >
               <div class="flex gap-5 items-center justify-center">
-                <img class="w-5" src="./assets/download.svg" alt="" />
+                <img class="w-4" src="./assets/download.svg" alt="" />
                 <span>Mac</span>
               </div>
-              <p>macOs 10.11+</p>
+              <p class="text-xs">macOs 10.11+</p>
             </div>
             <!-- button ends -->
             <!-- 1 -->
             <div class="flex justify-center items-center gap-y-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/4 text-center"
+              <span class="text-gray-700 font-medium block w-1/4 text-center"
                 >.zip</span
               >
-              <div class="w-3/4">
+              <div class="w-3/4 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >Intel chip</span
@@ -775,11 +831,10 @@
             </div>
             <!-- 2 -->
             <div class="flex justify-end items-center gap-y-2 mt-1">
-              <span
-                class="text-gray-700 text-lg font-medium block w-1/4 text-center"
+              <span class="text-gray-700 font-medium block w-1/4 text-center"
                 >CLI</span
               >
-              <div class="w-3/4">
+              <div class="w-3/4 text-xs">
                 <span
                   class="bg-[#2d74d7] hover:bg-[#0066ba] text-white p-[0.15rem] rounded-sm"
                   >Intel chip</span
@@ -797,17 +852,15 @@
 
       <!-- new features section starts -->
 
-      <section
-        class="h-[70vh] -mx-[6%] bg-gray-100 pt-[5%] pb-[30%] text-gray-700"
-      >
+      <section class="h-[75vh] -mx-[6%] bg-gray-100 p-[5%] text-gray-700">
         <!-- upper section -->
         <div class="flex justify-around items-start">
           <!-- left -->
           <div>
-            <p class="text-3xl font-[500] text-center">
+            <p class="text-2xl font-[500] text-center">
               Want new features sooner?
             </p>
-            <p class="py-[8%] text-center text-xl">
+            <p class="py-[8%] text-center text-lg">
               Get the
               <span class="text-[#0066b8] hover:underline">Insiders build</span>
               instead.
@@ -815,23 +868,23 @@
           </div>
           <!-- right -->
           <div>
-            <p class="text-3xl font-[500] text-center w-[90%]">
+            <p class="text-2xl font-[500] text-center w-[90%]">
               Use <span class="text-[#0066b8]">vscode.dev</span> for quick edits
               online!
             </p>
-            <p class="py-[8%] text-center text-xl">
+            <p class="py-[8%] text-center text-lg">
               GitHub, Azure Repos, and local files.
             </p>
           </div>
         </div>
 
         <!-- lower section -->
-        <div class="mt-5">
-          <p class="text-center text-gray-600 font-semibold text-lg">
+        <div class="mt-4">
+          <p class="text-center text-gray-600 font-semibold">
             License and Privacy Terms
           </p>
           <p
-            class="text-center text-gray-500 w-[58%] mx-auto pt-[1%] leading-[3] text-lg"
+            class="text-center text-gray-500 w-[65%] mx-auto pt-[1%] leading-[2.5]"
           >
             By downloading and using Visual Studio Code, you agree to the
             <span class="text-[#0066b8] hover:underline">license terms</span>
@@ -851,25 +904,27 @@
       <!-- new features section ends -->
 
       <!-- footer section -->
-      <footer class="h-[18vh] flex justify-center items-center text-[#e3e3e3]">
-        <div class="flex items-center w-[50%] text-lg">
+      <footer
+        class="h-[18vh] flex justify-center items-center text-[#e3e3e3] text-sm"
+      >
+        <div class="flex items-center w-[50%]">
           <span class="mr-6">Hello from Seattle</span>
           <span class="mr-6">Follow @code</span>
           <span
-            class="mr-2 bg-white text-sm font-medium text-gray-900 px-2 py-[0.5px] rounded-sm"
+            class="mr-2 bg-white text-xs font-medium text-gray-900 px-2 py-[0.5px] rounded-sm"
             ><i class="fa-brands fa-github"></i> Star</span
           >
           <span
-            class="mr-2 bg-white text-sm font-medium text-gray-900 px-2 py-[0.5px] rounded-sm hover:text-[#0066b8]"
+            class="mr-2 bg-white text-xs font-medium text-gray-900 px-2 py-[0.5px] rounded-sm hover:text-[#0066b8]"
             >143,189</span
           >
         </div>
         <div class="flex items-center w-[40%]">
           <span class="w-2/12">Support</span>
           <span class="w-2/12"> Privacy </span>
-          <span class="w-2/12">Terms of Use </span>
+          <span class="w-3/12">Terms of Use </span>
           <span class="w-2/12">License</span>
-          <span class="w-4/12 flex flex-col justify-center"
+          <span class="w-3/12 flex flex-col justify-center"
             ><img class="w-8/12" src="./assets/microsoft-logo.png" alt="" />
             <span>&copy; 2023 Microsoft</span>
           </span>
