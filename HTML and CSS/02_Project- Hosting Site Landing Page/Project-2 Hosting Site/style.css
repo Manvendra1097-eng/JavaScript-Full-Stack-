@@ -181,7 +181,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: start;
-  gap: 1rem;
+  gap: 3rem;
   color: var(--black);
   font-weight: 500;
 }
@@ -193,8 +193,8 @@ nav ul li {
 .right-feature li {
   list-style: none;
   border: 0.1rem solid #777;
-  border-radius: 2rem;
-  margin-bottom: 3.5rem;
+  border-radius: 10rem;
+  margin-bottom: 3.2rem;
   padding: 1.5rem 3rem;
   font-weight: 400;
 }
@@ -223,7 +223,7 @@ nav ul li {
   color: #fff;
   padding-block: 1.1rem;
   padding-inline: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-size: 1.2rem;
   position: relative;
 }
